@@ -1,0 +1,244 @@
+/*******Custom Propite******/
+:root {
+  --frst-color: #1f5e99;
+  --secund-color: #14192d;
+  --thrid-color: #1f5d88;
+  --whit-color: #fff;
+  --grey-lait-color: #f3f3f3;
+  --gey-color: #ccc;
+  --gery-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee6;
+  --title-color: #333;
+  --text-color: #222;
+  --whit-alhfa-color: rgba(255, 255, 255, 0.5);
+  --black-alhfa-color: rgba(0, 0, 0, 0.5);
+  --background-color: #bbdefb;
+  --blue-50: #e3f2fd;
+  --blue-100: #bbdefb;
+  --blue-A700: #2962ff;
+  --green-50: #e8f5e9;
+  --green-100: #c8e6c9;
+  --green-A700: #00c853;
+  --purple-50: #f3e5f5;
+  --purple-100: #e1bee7;
+  --purple-A700: #aa00ff;
+  --orange-50: #fff3e0;
+  --orange-100: #ffe0b2;
+  --orange-A700: #ff6d00;
+  --orange-700: #f57c00;
+  --grey-900: #212121;
+  --white: #ffffff;
+  --round-button-active-color: #212121;
+  --translate-main-slider: 100%;
+  --main-slider-color: #e3f2fd;
+  --translate-filters-slider: 0;
+  --filters-container-height: 3.8rem;
+  --filters-wrapper-opacity: 1;
+  --font: "Raleway" "sans-serif";
+  --max-whit: 1200px;
+}
+
+/*******Reset********/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--blue-100);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+h6 {
+  margin: 0;
+  font-size: 0.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.6;
+}
+
+/*****Componentes*****/
+/******Hero-img*******/
+.hero-img {
+  background-repeat: no-repeat;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-img-opaciti {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--black-alhfa-color);
+}
+.hero-title {
+  color: var(--white);
+  font-size: 7vw;
+}
+.hero-img-content img {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+/********menu*********/
+.menu-btn {
+  outline: thin solid var(--blue-A700);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--blue-A700);
+}
+.menu-btn svg {
+  fill: var(--grey-900);
+}
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--blue-A700);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--grey-900);
+}
+.menu a :hover {
+  color: var(--whit-color);
+  background-color: var(--grey-900);
+}
+/*******Utilites******/
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+.btn {
+  border-radius: 0.6rem;
+  font-size: 3vw;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--whit-color);
+  background-color: var(--blue-A700);
+}
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-whit);
+}
+
+.none {
+  display: none;
+}
+
+/*******syte site*******/
+.header {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  height: 4rem;
+  background-color: var(--blue-A700);
+  z-index: 999;
+}
+.header > .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: #212121;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media screen and (min-width: 780px) {
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(4rem-0.5rem);
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .menu a {
+    padding: 0 1rem;
+  }
+  .menu a:last-child {
+    padding-right: 0;
+  }
+  .menu a:hover {
+    background-color: transparent;
+  }
+}
