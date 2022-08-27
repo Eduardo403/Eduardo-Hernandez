@@ -11,59 +11,153 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="stayl.css" />
+
+    <meta name="description" content="my porfolio personal " />
+    <link
+      rel="shortcut icon"
+      href="https://eduardo403.github.io/Shortly/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://eduardo403.github.io/porfolio/images/logo.svg"
+    />
+    <meta name="theme-color" content="#00acee" />
+    <meta name="twitter.card" content="summary" />
+    <meta property="og:title" name="twitter.title" content="Easybank" />
+    <meta
+      property="og:image"
+      name="twitter.image"
+      content="https://eduardo403.github.io/porfolio/images/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      name="twitter.url"
+      content="https://eduardo403.github.io/porfolio/"
+    />
+    <meta
+      property="og:description"
+      name="twitter.description"
+      content="Con esta paguina puedes acortar las url para que sea mas facil enviarla "
+    />
+    <meta property="og:type" content="wedsite" />
+
+    <link rel="cononical" href="ttps://eduardo403.github.io/Shortly/" />
     <title>Eduardo Hernandez</title>
   </head>
   <body>
+    <!--header and logo-->
     <header class="header">
       <section class="conteiner">
-        <div class="logo"><a href="index.html">Eduardo Hernandez</a></div>
-        <button class="menu-btn">
-          <svg
-            class="open"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
-          <svg
-            class="close none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-            />
-          </svg>
+        <div class="logo"><a href="index.html"> /Eduardo ></a></div>
+        <button id="button-menu" class="button-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <nav class="menu">
-          <a href="#home">Inicio</a>
-          <a href="#abaut">Acerca</a>
-          <a href="#whort">Trabajos </a>
-          <a href="#contact">Contactame </a>
+          <a href="#home" class="nav">home</a>
+          <a href="#abaut" class="nav">abaut</a>
+          <a href="#whort" class="nav">Projects</a>
+          <a href="#contact" class="nav">Contact</a>
         </nav>
       </section>
     </header>
     <main>
+      <!--home and hero img-->
       <section id="home" class="home">
         <article class="hero-img" style="--img: url(Acess/hero-image.jpg)">
           <aside class="hero-img-opaciti">
             <div class="hero-img-content">
               <img src="./Acess/customer-2.jpg" alt="Eduardo" />
-              <h2 class="hero-title">Desarrollador Wed</h2>
-              <a href="#contact" class="btn">Contactame</a>
+              <h2 class="hero-title">Development Fronten</h2>
+              <a href="#contact" class="btn">Contact</a>
             </div>
           </aside>
         </article>
       </section>
+      <!--section abaut and dowloade CV-->
       <section id="abaut" class="abaut">
-        <h2>abaut</h2>
+        <article>
+          <aside class="slogan">
+            <h1>Eduardo Hernandez</h1>
+            <h5>Fronten development</h5>
+          </aside>
+          <h4>About me</h4>
+          <p>
+            ! Hello , my name is Eduardo, I like teamwork, during Almost all my
+            working life I have worked in teams, I think it is a good way to
+            gain knowledge and share different points of view Always with the
+            goal of improving, as a Fronten programmer I consider myself a
+            minimalist I think that less is more, I like my work to be fluid and
+            dynamic I love to try new tools and technologies, and discover what
+            they can offer, I hope we can work together
+          </p>
+
+        <div class="center">
+      <div class="download-btn">
+        <div class="top"><i class="fa fa-cloud-download"></i> Download</div>
+        <div class="bottom"><a href="#" target="_blank" rel="noopenir">CV:pdf</a></div>
+      </div>
+        </article>
+
+        <h3>Tecnologi to domain</h3>
+        <article class="tecnologias">
+          <div class="teg-domain">
+            <img src="./Acess/react-1.svg" alt="react js" />
+          </div>
+          <div class="teg-domain">
+            <img src="./Acess/css-3.svg" alt="CSS" />
+          </div>
+          <div class="teg-domain">
+            <img src="./Acess/html-1.svg" alt="HTML" />
+          </div>
+          <div class="teg-domain">
+            <img src="./Acess/javascript-1.svg" alt="javascript" />
+          </div>
+          <div class="teg-domain">
+            <img src="./Acess/git-icon.svg" alt="git" />
+          </div>
+        </article>
+        <article></article>
       </section>
       <section id="whort" class="whort">
-        <h2>whort</h2>
+        <div class="porfolio-cart">
+          <img src="./Acess/proyecto-1.jpg" alt="proyecto-1">
+          <aside class="porfolio-cart-info">
+            <div>
+              <h2>Proyecto 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus, vel atque eius veritatis qui quaerat explicabo, eligendi quas sapiente impedit velit consequatur quidem! Sit voluptatem nulla magnam illo temporibus!
+              </p>
+              
+              <a href="#">github</a>
+              <a href="#">see wed</a>
+            </div>
+          </aside>
+        </div>
+        <div class="porfolio-cart">
+             <img src="./Acess/proyect-2.jpg" alt="proyecto-2">
+          <aside class="porfolio-cart-info">
+            <div>
+              <h2>Proyecto 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus, vel atque eius veritatis qui quaerat explicabo, eligendi quas sapiente impedit velit consequatur quidem! Sit voluptatem nulla magnam illo temporibus!
+              </p>
+            </div>
+          </aside>
+        </div>
+         <div class="porfolio-cart">
+             <img src="./Acess/proyect-3.jpg" alt="proyecto-3">
+          <aside class="porfolio-cart-info">
+            <div>
+              <h2>Proyecto 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus, vel atque eius veritatis qui quaerat explicabo, eligendi quas sapiente impedit velit consequatur quidem! Sit voluptatem nulla magnam illo temporibus!
+              </p>
+            </div>
+          </aside>
+        </div>
       </section>
       <section id="contact" class="contact">
         <h2>contact</h2>
@@ -72,6 +166,6 @@
     <footer class="footer">
       &copy; <small>Creati bay Eduardo Hernandez</small>
     </footer>
-    <script src="./javascript/menu_amburgesa.js"></script>
+    <script src="./javascript/index.js" type="module"></script>
   </body>
 </html>
