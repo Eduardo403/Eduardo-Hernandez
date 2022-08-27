@@ -339,32 +339,44 @@ p {
   left: 0;
   padding: 1rem;
   background-color: var(--frst-alfa-color);
-  color: var(--white);
+  color: var(--text-color);
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
 }
-.porfolio-cart-info a {
-  display: block;
-  border: thin solid var(--whit-color);
-  border-radius: 4px;
-  color: red;
-  background-color: var(--frst-color);
-  margin: 1rem auto;
-  padding: 1rem;
 
-  font-size: 2.8vh;
-  text-decoration: none;
-}
 .porfolio-cart:hover .porfolio-cart-info {
   opacity: 1;
   pointer-events: auto;
 }
-.porfolio-cart-info > div {
+.border {
   padding: 1rem;
   border: thin solid var(--white);
   width: 100%;
   height: 100%;
+}
+.button-enlace {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  text-align: center;
+}
+.button-enlace a {
+  display: block;
+  border: thin solid var(--whit-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  background-color: var(--frst-color);
+  margin: 0.4rem;
+  padding: 0.4rem;
+  width: 40%;
+  font-size: 2.8vh;
+  text-decoration: none;
+}
+.button-enlace a:hover {
+  opacity: 0.8;
+  font-size: 3.2vh;
+  border: thin solid var(--frst-color);
 }
 @media screen and (min-width: 780px) {
 }
