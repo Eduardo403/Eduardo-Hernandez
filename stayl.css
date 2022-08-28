@@ -20,13 +20,11 @@
   --white: #ffffff;
   --round-button-active-color: #212121;
 
-  font-size: calc(20px + (40 - 20) * (100vw - 320px) / (1280 - 320));
-
   --font: "Raleway" "sans-serif";
   --max-whit: 1200px;
 }
 
-/*******Reset********/
+/*****************Reset*****************/
 html {
   box-sizing: border-box;
   font-family: var(--font);
@@ -84,7 +82,7 @@ p {
   line-height: 1.6;
 }
 
-/*******Utilites******/
+/*****************Utilites*************/
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
@@ -104,8 +102,11 @@ p {
 .none {
   display: none;
 }
+main {
+  margin-bottom: 2.4rem;
+}
 
-/********header******/
+/***************header**************/
 
 .header {
   position: fixed;
@@ -137,7 +138,7 @@ p {
   align-items: flex-start;
 }
 
-/******Hero-img*******/
+/***************Hero-img***************/
 .hero-img {
   background-repeat: no-repeat;
   background-image: var(--img);
@@ -251,45 +252,45 @@ p {
 }
 
 .abaut h4 {
-  margin: 1rem;
-  font-size: 2.6vh;
+  margin: 1rem auto;
+  font-size: 2.8vh;
+  width: 50%;
   border-bottom: 1px solid var(--frst-color);
 }
-.abaut p {
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.55);
-}
+
 .tecnologias {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
   padding: 1rem;
 }
-.tecnologias p {
-  font-size: 2.6vh;
-  font-family: sans-serif;
-  color: var(--blue-A700);
-}
+
 .teg-domain {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0.2rem;
-  padding: 0.2rem;
+  padding: 0.4rem;
   text-align: center;
 }
+.teg-domain svg {
+  width: 80px;
+  height: 80px;
+  margin: 0.4rem;
+}
 
-/****btn descarga de el cv****/
+/*****************btn descarga de el cv***************/
 .center {
-  margin: 1rem;
-  align-items: center;
+  margin: auto;
 }
 .download-btn {
   width: 200px;
   height: 60px;
   text-align: center;
   cursor: pointer;
-  margin: 20px 0px;
+  margin: 1rem auto;
+  /* margin: 20px 0px;*/
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
@@ -378,6 +379,13 @@ p {
   font-size: 3.2vh;
   border: thin solid var(--frst-color);
 }
+/**************contact************/
+.contact svg {
+  width: 80px;
+  height: 80px;
+}
+/*********************button-send*************/
+
 @media screen and (min-width: 780px) {
 }
 @media screen and (min-width: 1024px) {
@@ -413,5 +421,22 @@ p {
   }
   .menu a:hover {
     background-color: transparent;
+  }
+  .abaut {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 2.8vh;
+  }
+  .tecnologias {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vh;
+    width: 50%;
+  }
+  .tecnologias img {
+    width: 80px;
+    height: 80px;
   }
 }
