@@ -1,9 +1,9 @@
-import buttonSend from "./button_send.js";
 import menuHmburgesa from "./menu_hamburgesa.js";
+import sendData from "./send_From.js";
 
 function inite() {
+  sendData();
   menuHmburgesa();
-  buttonSend();
 }
 
 window.addEventListener("DOMContentLoaded", inite());

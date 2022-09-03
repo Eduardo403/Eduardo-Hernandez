@@ -1,7 +1,7 @@
 export default function menuHmburgesa() {
   const d = document;
   const $toggleButton = d.getElementById("button-menu");
-  const $navWrapper = d.querySelectorAll(".nav");
+  const $nav = d.querySelectorAll(".nav");
   const $menu = d.querySelector(".menu");
 
   $toggleButton.addEventListener("click", () => {
@@ -9,10 +9,12 @@ export default function menuHmburgesa() {
     $toggleButton.classList.toggle("close");
   });
 
-  $navWrapper.addEventListener("click", (e) => {
-    if (!e.target.matches(".menu a")) return false;
-
-    $toggleButton.classList.remove("close");
-    $menu.classList.remove("is-active");
+  $menu.addEventListener("click", (e) => {
+    if (!e.target.matches(".menu a")) {
+      return false;
+    } else {
+      $toggleButton.classList.remove("close");
+      $menu.classList.remove("is-active");
+    }
   });
 }
