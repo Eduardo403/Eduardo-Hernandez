@@ -337,7 +337,7 @@ main {
   left: 0;
   padding: 1rem;
   background-color: var(--frst-alfa-color);
-  color: var(--text-color);
+  color: var(--white);
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
@@ -360,16 +360,7 @@ main {
   text-align: center;
 }
 .button-enlace a {
-  display: block;
-  border: thin solid var(--whit-color);
-  border-radius: 6px;
-  color: var(--text-color);
-  background-color: var(--frst-color);
-  margin: 0.4rem;
-  padding: 0.4rem;
   width: 40%;
-  font-size: 2.8vh;
-  text-decoration: none;
 }
 .button-enlace a:hover {
   opacity: 0.8;
@@ -382,6 +373,13 @@ main {
   margin: 1rem auto;
   align-items: center;
   text-align: center;
+}
+
+.contact h2 {
+  margin: 1rem auto;
+  font-size: 4.6vh;
+  width: 40%;
+  border-bottom: 1px solid var(--frst-color);
 }
 .contact-cart {
   margin: 1rem auto;
@@ -467,6 +465,90 @@ textarea {
 }
 
 @media screen and (min-width: 780px) {
+  .contact-form {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    width: 80%;
+  }
+  .contact-form textarea {
+    grid-column: span 2;
+  }
+  .root {
+    grid-column: span 2;
+  }
+  .loader {
+    grid-column: span 2;
+  }
+  .conteiner-contact-cart {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+  }
+  .button-menu {
+    display: none;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(4rem-0.5rem);
+  }
+  .menu-btn {
+    display: none;
+  }
+  .logo {
+    margin: 0.4rem auto;
+  }
+  .menu {
+    position: static;
+    margin: auto;
+    font-size: 1vh;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .menu a {
+    padding: 0 1rem;
+  }
+  .menu a:last-child {
+    padding-right: 0;
+  }
+  .menu a:hover {
+    background-color: transparent;
+  }
+  .abaut {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 2.8vh;
+  }
+  .abaut h4 {
+    margin-right: 0;
+  }
+  .abaut p {
+    padding-right: 0.4rem;
+  }
+  .tecnologias {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vh;
+    width: 50%;
+    margin-top: 0;
+  }
+  .tecnologias img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .whort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 @media screen and (min-width: 1024px) {
   .contact-form {
