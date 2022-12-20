@@ -161,8 +161,8 @@ main {
   margin: 0.8rem auto;
 }
 .hero-img-content img {
-  width: 35%;
-  height: 35%;
+  width: 25%;
+  height: 25%;
   border-radius: 50%;
 }
 
@@ -260,19 +260,20 @@ main {
 }
 
 .tecnologias {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
+  display: grid;
+  grid-template-rows: 20%, 60%;
+  height: auto;
+  margin: 0.2rem;
   padding: 1rem;
 }
 
 .teg-domain {
-  display: flex;
-  flex-direction: row;
-  margin: 0.2rem;
-  padding: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 0.4rem;
+  padding: 0.8rem;
+  align-items: center;
   text-align: center;
 }
 .teg-domain svg {
